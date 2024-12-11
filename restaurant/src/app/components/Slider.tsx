@@ -21,12 +21,12 @@ const data = [
 
 const [currentSlide, setCurrentslide]= useState(0)
 
-// useEffect(()=>{
-//   const interval = setInterval(
-//     () => setCurrentslide((prev) => (prev ===data.length -1 ? 0 : prev + 1)),
-//   2000);
-//   return ()=> clearInterval(interval);
-// },[]);
+useEffect(()=>{
+  const interval = setInterval(
+    () => setCurrentslide((prev) => (prev ===data.length -1 ? 0 : prev + 1)),
+  2000);
+  return ()=> clearInterval(interval);
+},[]);
 
 
   return (
